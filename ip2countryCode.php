@@ -1,4 +1,5 @@
 //IP to countryCode
+// USE whois.kisa.or.kr Api library
 if(!function_exists("fSearchCountryCode"))
 {
   function fSearchCountryCode($ip) 
