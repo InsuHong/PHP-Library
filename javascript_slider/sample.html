@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>banner</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/slide.js"></script>
+<link rel="stylesheet" href="./css/slide.css">
+<style type='text/css' title=''>
+@keyframes fade_in 
+/* 내부버튼 */
+.WB_button_pre {margin:2px 2px; width:30px; height:30px; padding:0 0 0 0; background:#white; color:black; border:solid 1px black; cusor:pointer;}
+.WB_button_next {margin:2px 2px; width:30px; height:30px; padding:0 0 0 0; background:#white; color:black; border:solid 1px black; cusor:pointer;}
+.WB_button_on {margin:5px 1px; width:20px; height:20px; padding:0; background:#0000FF; color:white; border:solid 1px black; cusor:pointer;}
+.WB_button_off {margin:5px 1px; width:20px; height:20px; padding:0; background:white;  border:solid 1px black; cusor:pointer;}
+.item {width:300px; height:300px; border:solid 1px black;}
+</style>
+
+</head>  
+<body>  
+<!--
+effect : fade (페이드 아웃), slide (슬라이드)
+delay :  없을시 5000
+zindex :  없을시 10
+pagebutton : top,middle, bottom, left, right, none, 없을시 none
+pagetext : num (숫자표시), none (이미지버튼으로 CSS로 on/off 이미지만 변경할경우)
+arrow : true, false, 이전/다음버튼
+arrow_pre : 텍스트, 이전버튼 텍스트, CSS이미지로 처리할경우 비워둠
+arrow_next : 텍스트, 이전/다음버튼, CSS이미지로 처리할경우 비워둠
+loop : true, false, 무한반복 켜기/끄기
+autostart : true, false, 자동재생켜기 끄기
+-->
+<div class='wow_banner' effect="slide" delay="5000" zindex="100" pagebutton="bottom" pagetext="num" arrow="true" arrow_pre="←" arrow_next="→" loop="true" autostart="true">
+  <div class='item' style='background:red;'>1</div>
+  <div class='item' style='background:blue;'>2</div>
+  <div class='item'  style='background:green;'>3</div>     
+</div>
+
+<!-- 이전/다음 버튼 수동으로 넣을경우 -->
+<BR>
+<input type='button' value='이전' onclick="bn1.Pre()">
+<input type='button' value='다음' onclick="bn1.Next()">
+
+<script type='text/javascript'>
+<!--
+bn1 = new WOW_Rotation_Banner('wow_banner');
+//-->
+</script>
+
+
+
+</body>
+</html>                  

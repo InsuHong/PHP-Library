@@ -1,0 +1,44 @@
+@keyframes fade_in 
+{
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+@keyframes fade_out 
+{
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+@keyframes left_in 
+{
+    from { transform:translateX(100%);  }
+    to { transform:translateX(0); }
+}
+
+@keyframes left_out 
+{
+    from { transform:translateX(0);  }
+    to { transform:translateX(-100%); }
+}
+
+@keyframes right_in 
+{
+    from { transform:translateX(-100%); }
+    to { transform:translateX(0); }
+}
+
+@keyframes right_out 
+{
+    from { transform:translateX(0); }
+    to { transform:translateX(100%); }
+}
+
+/* 외부 레이아웃 */
+.wow_banner {width:100%;  padding-top:50%;}
+
+/* 내부버튼 */
+.wow_banner .WB_button_pre {margin:2px 2px; width:30px; height:30px; padding:0 0 0 0; background:#white; color:black; border:solid 1px black; cusor:pointer;}
+.wow_banner .WB_button_next {margin:2px 2px; width:30px; height:30px; padding:0 0 0 0; background:#white; color:black; border:solid 1px black; cusor:pointer;}
+.wow_banner .WB_button_on {margin:5px 1px; width:20px; height:20px; padding:0; background:#0000FF; color:white; border:solid 1px black; cusor:pointer;}
+.wow_banner .WB_button_off {margin:5px 1px; width:20px; height:20px; padding:0; background:white;  border:solid 1px black; cusor:pointer;}
